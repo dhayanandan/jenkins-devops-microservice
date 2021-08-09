@@ -4,7 +4,8 @@
 //declarative pipeline apprach
 pipeline {
 	
-	agent any
+	//agent any
+	agent { docker { image 'maven:3.8.1'} }
 	stages{
 		stage('Build')
 		{
@@ -15,6 +16,7 @@ pipeline {
 		stage('Test')
 		{
 			steps{
+				sh 'mvn --version'
 				echo "Test"
 			}
 		}
