@@ -13,7 +13,7 @@ pipeline {
 		{
 			steps{
 				//sh 'mvn --version'
-				sh 'node --version'
+				//sh 'node --version'
 				echo "Build"
 			}
 		}
