@@ -4,9 +4,9 @@
 //declarative pipeline apprach
 pipeline {
 	
-	//agent any
+	agent any
 	//agent { docker { image 'maven:3.6.3'} }
- 	agent { docker { image 'node:16.6.1' } }
+ 	//agent { docker { image 'node:16.6.1' } }
 
 	stages{
 		stage('Build')
